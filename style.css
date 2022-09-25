@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'kamikaze';
+  src: url(../font/Kamikaze3DGradient.ttf);
+}
+
+:root {
+  background-color: #001623ff;
+  --color: #ec7801ff;
+  --txt: rgb(185, 185, 185);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 400px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(1, 1, 1, 0.5);
+  width: 100%;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.tokyo {
+  font-family: 'kamikaze';
+  font-size: 6em;
+}
+
+.left {
+  display: grid;
+  place-items: center;
+  background-image: url(../img/city2.jpg);
+  width: 40%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right {
+  width: 60%;
+  padding-right: 200px;
+  padding-left: 50px;
+  padding-top: 200px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.lower-text {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.title {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.form-right {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 60px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.6em;
+  color: var(--txt);
+}
+
+.input:valid {
+  border-color: blue;
+}
+
+.input:invalid {
+  border-color: red;
+}
+
+input {
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 30px;
+  font-size: 1.5em;
+}
+
+.submit {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: var(--color);
+  border-color: var(--color);
+  border-shadow: ;
+}
+
+.log-in {
+  display: flex;
+  gap: 5px;
+  font-size: 0.8em;
+}
+
+.log-in a {
+  text-decoration: none;
+  color: var(--color);
+}

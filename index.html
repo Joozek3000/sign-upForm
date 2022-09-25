@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="left">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo" class="flower" />
+          <h1 class="tokyo">Tokyo</h1>
+        </div>
+      </div>
+      <div class="right">
+        <div class="text">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>Sign up <em>now</em> to get started</p>
+          <p class="lower-text">You <em>know</em> you want to.</p>
+        </div>
+        <form action="#">
+          <p class="title">Let's do this!</p>
+          <div class="form-right">
+            <div class="input">
+              <label for="first_name">FIRST NAME</label>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="John"
+              />
+            </div>
+
+            <div class="input">
+              <label for="last_name">LAST NAME</label>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                placeholder="Smith"
+              />
+            </div>
+
+            <div class="input">
+              <label for="user_email">*EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="user_email"
+                placeholder="johnsmith@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="input">
+              <label for="phone_number">PHONE NUMBER</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone_number"
+                minlength="12"
+                maxlength="13"
+                pattern="(+[0-9]\d{12})"
+                placeholder="+44 7812 345678"
+              />
+            </div>
+
+            <div class="input">
+              <label for="password">*PASSWORD</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+
+            <div class="input">
+              <label for="confirm-password">*CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
+
+          <button class="submit" type="submit">Create Account</button>
+        </form>
+        <div class="log-in">
+          <p>Already have account?</p>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
